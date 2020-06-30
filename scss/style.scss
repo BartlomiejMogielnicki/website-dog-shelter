@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 
     header {
-        background-color: lightseagreen;
+        background-color: #49A669;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -36,6 +36,36 @@ body {
             ul {
                 display: flex;
                 justify-content: space-evenly;
+
+                li {
+                    position: relative;
+                    transition: .3s;
+                    white-space: nowrap;
+
+                    &:hover i {
+                        transform: scale(.8);
+                        opacity: .3;
+                    }
+
+                    &:hover span {
+                        opacity: 1;
+                    }
+
+                    i {
+                        transition: .3s;
+                    }
+
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: white;
+                        font-weight: bold;
+                        opacity: 0;
+                        z-index: -1;
+                    }
+                }
             }
         }
 
@@ -57,6 +87,42 @@ body {
         padding: 20px;
         width: 100%;
         max-width: 1100px;
+        background-color: #F2F2F2;
+
+        &.start {
+            // background-image: url(/Dist/Img/dog.png);
+            // background-position: center bottom;
+            // background-repeat: no-repeat;
+            // background-size: contain;
+
+            .dogtail {
+                position: absolute;
+                left: 45%;
+                bottom: 150px;
+                animation: swing .3s linear infinite;
+                animation-direction: alternate;
+                transform-origin: bottom center;
+                opacity: .7;
+
+                img {
+                    height: 300px;
+                }
+            }
+
+            .dog {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                max-width: 800px;
+                z-index: 2;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
 
         &.about {
             display: flex;
@@ -95,8 +161,7 @@ body {
                 flex-wrap: wrap;
 
                 img {
-                    height: 30vw;
-                    max-height: 400px;
+                    max-height: 300px;
                 }
             }
         }
@@ -106,7 +171,7 @@ body {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            position: relative;
+            flex-wrap: wrap;
 
             .contact-info {
                 p {
@@ -117,6 +182,29 @@ body {
             .map {
                 height: 400px;
                 width: 400px;
+                z-index: 2;
+            }
+        }
+
+        .paws {
+            position: absolute;
+            opacity: .2;
+
+            &.small {
+                left: 0;
+                bottom: 0;
+                height: 400px;
+            }
+
+            &.big {
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            img {
+                height: 100%;
             }
         }
     }
@@ -124,5 +212,20 @@ body {
     footer {
         text-align: center;
         line-height: 30px;
+        background-color: #2F736C;
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(45deg) skew(-15deg, -15deg);
+    }
+
+    50% {
+        transform: rotate(0) skewX(0);
+    }
+
+    100% {
+        transform: rotate(-45deg) skew(15deg, 15deg);
     }
 }
