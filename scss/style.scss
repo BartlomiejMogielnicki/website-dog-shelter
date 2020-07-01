@@ -77,8 +77,33 @@ body {
         .social {
             position: absolute;
             right: 10px;
-            bottom: 10px;
+            bottom: 50px;
             z-index: 1;
+        }
+
+        .interest {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #BF544B;
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 5px;
+            z-index: 1;
+
+            span {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                strong {
+                    margin: 0 10px;
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 
@@ -170,7 +195,7 @@ body {
                     z-index: 1;
                     height: 300px;
                     width: 300px;
-                    border-radius: 10px;
+                    border-radius: 20px;
                     box-shadow: 0 0 5px black;
 
                     a {
@@ -184,7 +209,7 @@ body {
 
                     img {
                         transition: .3s;
-                        border-radius: 10px;
+                        border-radius: 20px;
                     }
 
                     span {
