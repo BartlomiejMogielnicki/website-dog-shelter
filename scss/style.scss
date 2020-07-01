@@ -101,31 +101,41 @@ body {
             height: 100%;
 
             &.start {
-                .dogtail {
-                    position: absolute;
-                    left: 45%;
-                    bottom: 120px;
-                    animation: swing .3s linear infinite;
-                    animation-direction: alternate;
-                    transform-origin: bottom center;
-                    opacity: .7;
-
-                    img {
-                        height: 300px;
-                    }
-                }
-
-                .dog {
+                .dog-welcome {
                     position: fixed;
-                    bottom: -5px;
-                    left: 50%;
-                    transform: translateX(-50%);
+                    bottom: 0;
+                    left: 0;
+                    animation: showDog .8s ease-out forwards;
                     width: 100%;
-                    max-width: 800px;
+                    height: 50%;
+                    transform: translateY(100%);
                     z-index: 2;
 
-                    img {
+                    .dogtail {
+                        position: absolute;
+                        left: 45%;
+                        bottom: 120px;
+                        animation: swing .3s linear infinite;
+                        animation-direction: alternate;
+                        transform-origin: bottom center;
+                        opacity: .7;
+
+                        img {
+                            height: 300px;
+                        }
+                    }
+
+                    .dog {
+                        position: absolute;
+                        bottom: -5px;
+                        left: 50%;
+                        transform: translateX(-50%);
                         width: 100%;
+                        max-width: 800px;
+
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -150,7 +160,6 @@ body {
             &.adoption {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
                 grid-gap: 20px;
 
                 .card {
@@ -162,12 +171,14 @@ body {
                     height: 300px;
                     width: 300px;
                     border-radius: 10px;
+                    box-shadow: 0 0 5px black;
 
                     a {
 
                         &:hover img,
                         &:hover span {
                             transform: scale(1.05);
+                            box-shadow: 0 0 20px black;
                         }
                     }
 
@@ -283,5 +294,15 @@ body {
 
     100% {
         transform: rotate(-45deg) skew(15deg, 15deg);
+    }
+}
+
+@keyframes showDog {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
