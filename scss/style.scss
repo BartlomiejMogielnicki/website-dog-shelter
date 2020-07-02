@@ -1,12 +1,15 @@
 @import 'config';
 
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
 body {
     min-height: 100vh;
     width: 100%;
     display: grid;
     grid-template-rows: 250px 1fr 30px;
     overflow-x: hidden;
-    background-image: url(/Dist/Img/Paws.png);
 
     header {
         background-color: $primary-color;
@@ -116,6 +119,11 @@ body {
                 margin-top: 15px;
                 text-align: center;
             }
+        }
+
+        &.transition-fade {
+            opacity: 1;
+            transition: .5s;
         }
 
         .container {
