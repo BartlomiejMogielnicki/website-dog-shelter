@@ -113,6 +113,32 @@
                         }
                     }
                 }
+
+                &.adoption {
+                    grid-template-columns: 1fr;
+
+                    .card {
+                        height: 250px;
+                        width: 250px;
+                    }
+                }
+
+                &.contact {
+
+                    .contact-info {
+                        text-align: center;
+                    }
+
+                    .map {
+                        margin-top: 20px;
+                        height: 300px;
+                        width: 300px;
+
+                        iframe {
+                            height: 300px;
+                        }
+                    }
+                }
             }
         }
     }
