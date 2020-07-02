@@ -1,0 +1,121 @@
+@include mediaSmall {
+    body {
+
+        header {
+
+            .main-nav {
+                margin: 0 auto;
+                top: 0;
+                right: 0;
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, .3);
+
+                ul {
+                    li {
+                        margin: 5px;
+
+                        a {
+                            i {
+                                font-size: 1.5rem;
+                            }
+
+                            span {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .welcome {
+                width: 85%;
+                text-align: center;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .interest {
+                span {
+                    font-size: 1rem;
+
+                    strong {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        main {
+            .container {
+                &.home {
+                    .dog-welcome {
+                        .dogtail {
+                            bottom: 70px;
+
+                            img {
+                                height: 150px;
+                            }
+
+                        }
+                    }
+
+                    .start {
+
+                        .welcome {
+
+                            margin-top: 30px;
+
+                            h1 {
+                                font-size: 2.5rem;
+                            }
+
+                            h2 {
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        .main-nav {
+                            margin-top: 20px;
+
+                            ul {
+                                li {
+                                    a {
+                                        width: 140px;
+
+                                        i {
+                                            font-size: 1.5rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.about {
+
+                    .about-container {
+                        flex-wrap: wrap;
+                        text-align: center;
+
+                        img {
+                            order: 2;
+                        }
+
+                        p {
+                            order: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mediaMedium {}
