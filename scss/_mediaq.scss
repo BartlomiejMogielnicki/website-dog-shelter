@@ -1,14 +1,12 @@
 @include mediaSmall {
     body {
-
         header {
-
             .main-nav {
-                margin: 0 auto;
-                top: 0;
-                padding-top: 5px;
-                right: 0;
                 width: 100%;
+                top: 0;
+                right: 0;
+                padding-top: 5px;
+                margin: 0 auto;
                 border-bottom: 1px solid rgba(255, 255, 255, .3);
 
                 ul {
@@ -28,7 +26,7 @@
                 }
             }
 
-            .welcome {
+            .title-container {
                 width: 85%;
                 text-align: center;
 
@@ -41,7 +39,7 @@
                 }
             }
 
-            .interest {
+            .request-container {
                 span {
                     font-size: 1rem;
 
@@ -55,20 +53,18 @@
         main {
             .container {
                 &.home {
-                    .dog-welcome {
+                    .dog-container {
                         .dogtail {
                             bottom: 50px;
 
                             img {
                                 height: 150px;
                             }
-
                         }
                     }
 
-                    .start {
-
-                        .welcome {
+                    .start-screen {
+                        .start-title-container {
 
                             margin-top: 30px;
 
@@ -105,8 +101,7 @@
                 }
 
                 &.about {
-
-                    .about-container {
+                    div {
                         flex-wrap: wrap;
                         text-align: center;
 
@@ -138,11 +133,10 @@
                 }
 
                 &.contact {
-
                     .map {
-                        margin-top: 20px;
                         height: 250px;
                         width: 250px;
+                        margin-top: 20px;
 
                         iframe {
                             height: 250px;
@@ -159,10 +153,10 @@
     body {
         header {
             .main-nav {
-                margin: 0 auto;
+                width: 100%;
                 top: 0;
                 right: 0;
-                width: 100%;
+                margin: 0 auto;
                 transform: translateY(0);
 
                 ul {
@@ -186,7 +180,7 @@
                 display: none;
             }
 
-            .welcome {
+            .title-container {
                 h1 {
                     font-size: 2.4rem;
                     letter-spacing: 1px;
@@ -197,19 +191,18 @@
         main {
             .container {
                 &.home {
-                    .dog-welcome {
+                    .dog-container {
                         .dogtail {
                             bottom: 90px;
 
                             img {
                                 height: 200px;
                             }
-
                         }
                     }
 
-                    .start {
-                        .main-nav {
+                    .start-screen {
+                        .start-screen-nav {
                             margin-top: 20px;
                         }
                     }
@@ -230,9 +223,8 @@
 
 @include mediaBig {
     body {
-
         header {
-            .welcome {
+            .title-container {
                 h1 {
                     font-size: 2.7rem;
                     letter-spacing: 1px;
@@ -243,23 +235,21 @@
         main {
             .container {
                 &.home {
-                    .dog-welcome {
+                    .dog-container {
                         .dogtail {
                             bottom: 120px;
 
                             img {
                                 height: 250px;
                             }
-
                         }
                     }
 
-                    .start {
-                        .main-nav {
+                    .start-screen {
+                        .start-screen-nav {
                             margin-top: 130px;
                         }
                     }
-
                 }
             }
         }
@@ -268,7 +258,6 @@
 
 @include mediaLarge {
     body {
-
         header {
             .main-nav {
                 max-width: 1100px;
@@ -276,28 +265,26 @@
                 transform: translateX(50%);
             }
 
-            .welcome {
+            .title-container {
                 margin-top: 75px;
             }
         }
 
         main {
             .container {
-
                 &.home {
-                    .dog-welcome {
+                    .dog-container {
                         .dogtail {
                             bottom: 150px;
 
                             img {
                                 height: 250px;
                             }
-
                         }
                     }
 
-                    .start {
-                        .main-nav {
+                    .start-screen {
+                        .start-screen-nav {
                             margin-top: 120px;
                         }
                     }
