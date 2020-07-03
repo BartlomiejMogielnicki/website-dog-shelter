@@ -8,14 +8,6 @@ const init = () => {
 
 init();
 
-// Adjust navigation class depend on window width
-window.addEventListener('resize', () => {
-    if (innerWidth > 1025) {
-        mainNav.classList.remove('show');
-        menuBtn.classList.remove('close');
-    };
-})
-
 // Show/hide navigation menu
 menuBtn.addEventListener('click', () => {
     mainNav.classList.toggle('show');
