@@ -2,12 +2,16 @@
     body {
         header {
             .main-nav {
+                position: fixed;
                 width: 100%;
                 top: 0;
                 right: 0;
                 padding-top: 5px;
+                padding-bottom: 5px;
                 margin: 0 auto;
+                background-color: $primary-color;
                 border-bottom: 1px solid rgba(255, 255, 255, .3);
+                z-index: 2;
 
                 ul {
                     li {
@@ -26,6 +30,16 @@
                 }
             }
 
+            .menu-btn {
+                position: fixed;
+                width: 45px;
+                height: 40px;
+                padding: 5px;
+                z-index: 1;
+                background-color: $primary-color;
+                border-radius: 5px;
+            }
+
             .title-container {
                 width: 85%;
                 text-align: center;
@@ -40,6 +54,9 @@
             }
 
             .request-container {
+
+                z-index: 0;
+
                 span {
                     font-size: 1rem;
 
