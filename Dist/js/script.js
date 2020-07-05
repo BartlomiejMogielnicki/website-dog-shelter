@@ -4,20 +4,26 @@ const homeBtn = document.getElementById('home-btn');
 
 const init = () => {
     const swup = new Swup();
+
+    // Main navigation position swap
+    if (window.location.href.includes('index')) {
+        mainNav.classList.add('start');
+        menuBtn.classList.add('hide');
+        homeBtn.classList.add('hide');
+    } else {
+        mainNav.classList.remove('start');
+        menuBtn.classList.remove('hide');
+        homeBtn.classList.remove('hide');
+    };
 };
 
 init();
 
+// Event listeners:
 // Show/hide navigation menu
 menuBtn.addEventListener('click', () => {
     mainNav.classList.toggle('show');
     menuBtn.classList.toggle('close');
 });
-
-// Hide main navigation if swap to home page
-homeBtn.addEventListener('click', () => {
-    mainNav.classList.remove('show');
-    menuBtn.classList.remove('close');
-})
 
 document.addEventListener('swup:contentReplaced', init);

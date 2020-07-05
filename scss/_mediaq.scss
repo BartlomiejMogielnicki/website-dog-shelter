@@ -27,6 +27,30 @@
                         }
                     }
                 }
+
+                &.start {
+                    transform: translate(50%, 225px) scale(1.1);
+                    border-bottom: none;
+                    background-color: transparent;
+
+                    ul {
+
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        justify-items: center;
+
+                        li {
+                            margin-top: 40px;
+
+                            a {
+                                span {
+                                    font-size: .9rem;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .menu-btn {
@@ -34,7 +58,7 @@
                 width: 45px;
                 height: 40px;
                 padding: 5px;
-                z-index: 1;
+                z-index: 2;
                 background-color: $primary-color;
                 border-radius: 5px;
             }
@@ -74,43 +98,7 @@
                             bottom: 50px;
 
                             img {
-                                height: 150px;
-                            }
-                        }
-                    }
-
-                    .start-screen {
-                        .start-title-container {
-
-                            margin-top: 30px;
-
-                            h1 {
-                                font-size: 1.8rem;
-                            }
-
-                            h2 {
-                                font-size: 1.5rem;
-                            }
-                        }
-
-                        .main-nav {
-                            margin-top: 20px;
-
-                            ul {
-                                li {
-                                    a {
-                                        width: 130px;
-                                        margin: 10px;
-
-                                        i {
-                                            font-size: 1.2rem;
-                                        }
-
-                                        span {
-                                            font-size: 1rem;
-                                        }
-                                    }
-                                }
+                                height: 100px;
                             }
                         }
                     }
@@ -216,12 +204,6 @@
                             }
                         }
                     }
-
-                    .start-screen {
-                        .start-screen-nav {
-                            margin-top: 20px;
-                        }
-                    }
                 }
 
                 &.adoption {
@@ -260,12 +242,6 @@
                             }
                         }
                     }
-
-                    .start-screen {
-                        .start-screen-nav {
-                            margin-top: 130px;
-                        }
-                    }
                 }
             }
         }
@@ -296,12 +272,6 @@
                             img {
                                 height: 250px;
                             }
-                        }
-                    }
-
-                    .start-screen {
-                        .start-screen-nav {
-                            margin-top: 120px;
                         }
                     }
                 }
