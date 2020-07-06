@@ -77,11 +77,10 @@ body {
       }
 
       &.start {
-        transform: translate(50%, 400px);
+        transform: translate(50%, 385px);
 
         ul {
           width: 70%;
-          transform: scale(1.5);
 
           li {
             :hover i {
@@ -90,7 +89,13 @@ body {
               background-color: $secondary-color;
             }
 
+            i {
+              width: 70px;
+              font-size: 2rem;
+            }
+
             span {
+              margin-top: 10px;
               transform: translate(-50%, 120%);
               opacity: 1;
             }
