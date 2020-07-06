@@ -29,7 +29,7 @@
         }
 
         &.start {
-          transform: translate(50%, 225px) scale(1.1);
+          transform: translate(50%, 250px) scale(.7);
           border-bottom: none;
           background-color: transparent;
 
@@ -41,7 +41,7 @@
             justify-items: center;
 
             li {
-              margin-top: 40px;
+              margin-top: 35px;
 
               a {
                 span {
@@ -233,6 +233,30 @@
             height: 300px;
             width: 300px;
           }
+        }
+      }
+    }
+  }
+}
+
+@include mediaSmallLandscape {
+  body {
+    header {
+      .main-nav {
+        &.start {
+          transform: translate(50%, 275px) scale(.7);
+        }
+      }
+    }
+
+    main {
+      &.home {
+        height: 150px;
+      }
+
+      .container {
+        .dog-container {
+          display: none;
         }
       }
     }
