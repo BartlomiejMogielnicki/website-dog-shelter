@@ -6,49 +6,49 @@ $tertiary-color: #F2EBDC;
 $quaternary-color: #535B73;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 li {
-    list-style: none
+  list-style: none
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 img {
-    z-index: 1;
+  z-index: 1;
 }
 
 
 @mixin mediaSmall {
-    @media screen and (max-width: 550px) {
-        @content;
-    }
+  @media screen and (max-width: 550px) {
+    @content;
+  }
 }
 
 @mixin mediaMedium {
-    @media screen and (min-width: 551px) {
-        @content;
-    }
+  @media screen and (min-width: 551px) {
+    @content;
+  }
 }
 
 @mixin mediaBig {
-    @media screen and (min-width: 730px) {
-        @content;
-    }
+  @media screen and (min-width: 730px) {
+    @content;
+  }
 }
 
 @mixin mediaLarge {
-    @media screen and (min-width: 1025px) {
-        @content;
-    }
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
 }

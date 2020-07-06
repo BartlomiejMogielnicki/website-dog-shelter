@@ -1,290 +1,240 @@
 @include mediaSmall {
-    body {
-        header {
-            .main-nav {
-                position: fixed;
-                width: 100%;
-                top: 0;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                margin: 0 auto;
-                background-color: $primary-color;
-                border-bottom: 1px solid rgba(255, 255, 255, .3);
-                z-index: 2;
+  body {
+    header {
+      .main-nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+        background-color: $primary-color;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        z-index: 2;
 
-                ul {
-                    li {
-                        margin: 5px;
+        ul {
+          li {
+            margin: 5px;
 
-                        a {
-                            i {
-                                font-size: 1.5rem;
-                            }
+            a {
+              i {
+                font-size: 1.5rem;
+              }
 
-                            span {
-                                font-size: 1.1rem;
-                            }
-                        }
-                    }
-                }
-
-                &.start {
-                    transform: translate(50%, 225px) scale(1.1);
-                    border-bottom: none;
-                    background-color: transparent;
-
-                    ul {
-
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-template-rows: 1fr 1fr;
-                        justify-items: center;
-
-                        li {
-                            margin-top: 40px;
-
-                            a {
-                                span {
-                                    font-size: .9rem;
-                                }
-                            }
-                        }
-                    }
-                }
+              span {
+                font-size: 1.1rem;
+              }
             }
+          }
+        }
 
-            .menu-btn {
-                position: fixed;
-                width: 45px;
-                height: 40px;
-                padding: 5px;
-                z-index: 2;
-                background-color: $primary-color;
-                border-radius: 5px;
-            }
+        &.start {
+          transform: translate(50%, 225px) scale(1.1);
+          border-bottom: none;
+          background-color: transparent;
 
-            .title-container {
-                width: 85%;
-                text-align: center;
+          ul {
 
-                h1 {
-                    font-size: 2rem;
-                }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
 
-                h2 {
-                    font-size: 1.1rem;
-                }
-            }
+            li {
+              margin-top: 40px;
 
-            .request-container {
-
-                z-index: 0;
-
+              a {
                 span {
-                    font-size: 1rem;
-
-                    strong {
-                        font-size: 1.2rem;
-                    }
+                  font-size: .9rem;
                 }
+              }
             }
+          }
+        }
+      }
+
+      .menu-btn {
+        position: fixed;
+        width: 45px;
+        height: 40px;
+        padding: 5px;
+        z-index: 2;
+        background-color: $primary-color;
+        border-radius: 5px;
+      }
+
+      .title-container {
+        width: 85%;
+        text-align: center;
+
+        h1 {
+          font-size: 2rem;
         }
 
-        main {
-            .container {
-                &.home {
-                    .dog-container {
-                        .dogtail {
-                            bottom: 50px;
-
-                            img {
-                                height: 100px;
-                            }
-                        }
-                    }
-                }
-
-                &.about {
-                    div {
-                        flex-wrap: wrap;
-                        text-align: center;
-
-                        img {
-                            order: 2;
-                        }
-
-                        p {
-                            order: 1;
-                        }
-                    }
-                }
-
-                &.adoption {
-                    grid-template-columns: 1fr;
-
-                    .card {
-                        height: 250px;
-                        width: 250px;
-                    }
-                }
-
-                &.volunteering {
-                    .volunteering-container {
-                        img {
-                            max-height: 250px;
-                        }
-                    }
-                }
-
-                &.contact {
-                    .map {
-                        height: 250px;
-                        width: 250px;
-                        margin-top: 20px;
-
-                        iframe {
-                            height: 250px;
-                        }
-                    }
-                }
-            }
+        h2 {
+          font-size: 1.1rem;
         }
+      }
+
+      .request-container {
+
+        z-index: 0;
+
+        span {
+          font-size: 1rem;
+
+          strong {
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
+
+    main {
+      .container {
+        &.about {
+          div {
+            flex-wrap: wrap;
+            text-align: center;
+
+            img {
+              order: 2;
+            }
+
+            p {
+              order: 1;
+            }
+          }
+        }
+
+        &.adoption {
+          grid-template-columns: 1fr;
+
+          .card {
+            height: 250px;
+            width: 250px;
+          }
+        }
+
+        &.volunteering {
+          .volunteering-container {
+            img {
+              max-height: 250px;
+            }
+          }
+        }
+
+        &.contact {
+          .map {
+            height: 250px;
+            width: 250px;
+            margin-top: 20px;
+
+            iframe {
+              height: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @include mediaMedium {
 
-    body {
-        header {
-            .main-nav {
-                width: 100%;
-                max-width: 700px;
-                top: 0;
-                right: 50%;
-                transform: translate(50%, 0);
+  body {
+    header {
+      .main-nav {
+        width: 100%;
+        max-width: 700px;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, 0);
 
-                ul {
-                    li {
-                        margin: 5px;
+        ul {
+          li {
+            margin: 5px;
 
-                        a {
-                            i {
-                                font-size: 1.5rem;
-                            }
+            a {
+              i {
+                font-size: 1.5rem;
+              }
 
-                            span {
-                                font-size: 1.1rem;
-                            }
-                        }
-                    }
-                }
+              span {
+                font-size: 1.1rem;
+              }
             }
-
-            .menu-btn {
-                display: none;
-            }
-
-            .title-container {
-                h1 {
-                    font-size: 2.4rem;
-                    letter-spacing: 1px;
-                }
-            }
+          }
         }
+      }
 
-        main {
-            .container {
-                &.home {
-                    .dog-container {
-                        .dogtail {
-                            bottom: 90px;
+      .menu-btn {
+        display: none;
+      }
 
-                            img {
-                                height: 200px;
-                            }
-                        }
-                    }
-                }
-
-                &.adoption {
-                    grid-template-columns: repeat(2, 1fr);
-
-                    .card {
-                        height: 230px;
-                        width: 230px;
-                    }
-                }
-            }
+      .title-container {
+        h1 {
+          font-size: 2.4rem;
+          letter-spacing: 1px;
         }
+      }
     }
+
+    main {
+      .container {
+
+        &.adoption {
+          grid-template-columns: repeat(2, 1fr);
+
+          .card {
+            height: 230px;
+            width: 230px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include mediaBig {
-    body {
-        header {
-            .title-container {
-                h1 {
-                    font-size: 2.7rem;
-                    letter-spacing: 1px;
-                }
-            }
+  body {
+    header {
+      .title-container {
+        h1 {
+          font-size: 2.7rem;
+          letter-spacing: 1px;
         }
-
-        main {
-            .container {
-                &.home {
-                    .dog-container {
-                        .dogtail {
-                            bottom: 120px;
-
-                            img {
-                                height: 250px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 @include mediaLarge {
-    body {
-        header {
-            .main-nav {
-                max-width: 700px;
-                right: 50%;
-                transform: translateX(50%);
-            }
+  body {
+    header {
+      .main-nav {
+        max-width: 700px;
+        right: 50%;
+        transform: translateX(50%);
+      }
 
-            .title-container {
-                margin-top: 75px;
-            }
-        }
-
-        main {
-            .container {
-                &.home {
-                    .dog-container {
-                        .dogtail {
-                            bottom: 150px;
-
-                            img {
-                                height: 250px;
-                            }
-                        }
-                    }
-                }
-
-                &.adoption {
-                    grid-template-columns: repeat(3, 1fr);
-
-                    .card {
-                        height: 300px;
-                        width: 300px;
-                    }
-                }
-            }
-        }
+      .title-container {
+        margin-top: 75px;
+      }
     }
+
+    main {
+      .container {
+
+        &.adoption {
+          grid-template-columns: repeat(3, 1fr);
+
+          .card {
+            height: 300px;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
 }
