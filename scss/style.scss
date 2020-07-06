@@ -80,11 +80,10 @@ body {
         transform: translate(50%, 400px);
 
         ul {
-          transform: scale(1.5);
           width: 70%;
+          transform: scale(1.5);
 
           li {
-
             :hover i {
               transform: scale(1.2);
               opacity: 1;
@@ -171,7 +170,6 @@ body {
       text-align: center;
 
       span {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -397,7 +395,7 @@ body {
   }
 
   .paws-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;

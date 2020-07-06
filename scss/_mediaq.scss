@@ -34,7 +34,6 @@
           background-color: transparent;
 
           ul {
-
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
@@ -77,7 +76,6 @@
       }
 
       .request-container {
-
         z-index: 0;
 
         span {
@@ -141,7 +139,6 @@
 }
 
 @include mediaMedium {
-
   body {
     header {
       .main-nav {
@@ -182,7 +179,6 @@
 
     main {
       .container {
-
         &.adoption {
           grid-template-columns: repeat(2, 1fr);
 
@@ -225,7 +221,6 @@
 
     main {
       .container {
-
         &.adoption {
           grid-template-columns: repeat(3, 1fr);
 
@@ -251,7 +246,7 @@
 
     main {
       &.home {
-        height: 150px;
+        height: 130px;
       }
 
       .container {
@@ -259,6 +254,10 @@
           display: none;
         }
       }
+    }
+
+    footer {
+      background-color: darken($quaternary-color, 10%);
     }
   }
 }
